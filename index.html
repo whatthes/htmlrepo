@@ -42,27 +42,50 @@
         <p>this is <mark>mark</mark>tag</p>
         <p>this is <sub>sub</sub>tag for subscript</p>
         <p>this is <sup>sup</sup>tag for superscript</p>
-        <p>this is <mark>mark</mark>tag</p>
+
+        <h3>unordered list</h3>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+
+        <h3>ordered list</h3>
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ol>
         
         <!-- images 
-             src -> path of img
+             src -> path of img, absolute or relative
              width -> 100% means fit to window
              alt -> short description
         -->
-        <img src="eastern-rosella-1-1617233.jpg"  width="100%" alt="this is a parrot" />
+        <img src="./eastern-rosella-1-1617233.jpg"  width="30%" alt="this is a parrot" />
+        <img src="https://www.theodinproject.com/mstile-310x310.png">
+
         
         <!-- anchor tag
              href Internal- link own website
              href External- link other website (type in https)
              href Downloads- link to files
              href Anchor- links to specific area of page
-             target attribute _blank opens another tab
+
+             `target` attribute `_blank` opens another tab
+             `rel` attribute `noopener noreferrer` prevents new tab from accessing original webpage who called it, good security practice to add
+             `rel` attribute defines the relationship between a linked resource and the current document
         -->
+        <div>
         <a href="contact.html">Contact us</a>
         <a href="prices/pricelist.html">pricelist</a>
-        <a href="https://google.com" target="_blank">Go to google</a>
+        <a href="https://google.com" target="_blank" rel="noopener noreferrer">Go to google</a>
         <a href="downloads/sweet-flat-candy-png-5690113.svg">download candy</a>
         <a href="#top">back to top</a>
+        <a href="./pages/about.html">About</a>
+        </div>
+
+        
     </body>
 
 </html> 
