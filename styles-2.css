@@ -1,0 +1,37 @@
+/* cascade
+
+most specific selector wins
+
+ID selectors (most specific selector)
+Class selectors
+Type selectors
+
+When there is no declaration with a selector of higher specificity, a rule with a greater number of selectors of the same type will take precedence 
+https://www.theodinproject.com/lessons/foundations-the-cascade#specificity
+
+* + ~ > doesnt add to specificity
+
+# inheritance
+Typography-based properties (color, font-size, font-family, etc.) are usually inherited by child
+however if child targeted it will override parent
+
+<div id="parent">
+  <div class="child"></div>
+</div>
+
+#parent {
+    color: red;
+}
+
+.child {
+    color: blue;
+}
+
+
+# Rule order
+in case of ultimate tie-breakers, last defined wins
+
+
+test specificity
+https://specificity.keegan.st/
+*/

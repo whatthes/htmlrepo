@@ -1,0 +1,75 @@
+/* CSS reference */
+
+
+/* Universal selector */
+/*
+
+* { 
+    color: purple;
+  }
+
+*/
+
+/* Type selectors 
+
+div {
+    color: white;
+}
+
+*/
+
+/* Class selectors 
+- after dot
+- declare class attribute in html tag
+- you can add space-delimited class names in one class attribute
+
+.alert-text {
+  color: red;
+}
+
+*/
+
+/* ID selectors
+- like class tags, but id only belongs in one single tag, no repeat
+
+#title {
+  background-color: red;
+}
+*/
+
+/* The grouping selector 
+-use when 2 selector share the same style
+
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+*/
+
+/* Chaining selectors
+<div>
+  <div class="subsection header">Latest Posts</div>
+  <p class="subsection" id="preview">
+    This is where a preview for a post might go.
+  </p>
+</div>
+
+
+.subsection.header {
+  color: red;
+}
+
+.subsection#preview {
+  color: blue;
+}
+*/
+
+/* Descendant Combinator
+- notice the space between selectors
+- this means only `contents` with parent/grandparents etc of `ancestors` will be selected
+
+.ancestor .contents {
+}
+*/
