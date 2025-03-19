@@ -61,7 +61,7 @@ div {
   color: red;
 }
 
-.subsection#preview {
+h1,h2.subsection#preview {
   color: blue;
 }
 */
@@ -73,3 +73,7 @@ div {
 .ancestor .contents {
 }
 */
+
+/* * {
+  outline: 2px solid red;
+} */

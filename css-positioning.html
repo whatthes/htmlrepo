@@ -1,0 +1,67 @@
+<!doctype html>
+
+
+<!-- following tutorial
+https://www.youtube.com/watch?v=jx5jmI0UlXU 
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/Containing_block#identifying_the_containing_block
+
+  position static is default, top down declaration, Normal Flow of the document. 
+  The top, right, bottom, left, and z-index properties have no effect.
+
+  position relative is used to move relative to where it would statically be, relative to normal flow
+   top, right, bottom, left, and z-index properties is allowed.
+
+  position absolute removes element from normal document flow,  no space is created for the element in the page layout.
+    position element relative to nearest ancestor which is not have position: static
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <style>
+
+            .parent {
+                background-color: cadetblue;
+                position: absolute;
+            }
+
+            .child-one {
+                background-color: greenyellow;
+                position: absolute;
+                top: 0px;
+                left:0px;
+            }
+
+            .child-two {
+                background-color: khaki;
+            }
+
+            .child-three {
+                background-color: olivedrab;
+            }
+
+            .span-test {
+                display: block;
+                font: 40;
+                color: blue;
+                width: 200;
+                height: 200;
+            }
+        </style>
+    </head>
+
+
+
+
+    <body>
+        <div class="parent">
+            Parent
+            <div class="child-one child">One</div>
+            <div class="child-two child">Two</div>
+            <div class="child-three child"><span class="span-test">Three</span></div>
+        </div>
+    </body>
+</html>

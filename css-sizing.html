@@ -1,0 +1,53 @@
+<!-- 
+
+height width float etc
+
+types of attributes:
+height:
+width:
+max/min-width:  max min values usually have a very high precedence
+max/min-height: 
+
+types of values:
+    px : gives an absolute value in terms of pixel
+    %: percentage of span of its container
+    vh: percentage span of viewport HEIGHT
+    vw: percentage spant of viewport WIDTH
+    auto: eg, adjust according to remaing space left.
+
+    auto vs 100% , if say margin is used, auto will still adjust according with whatever space is left in container. 
+        100% will flow out of container
+-->
+
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>css sizing</title>
+        <style>
+
+        .container {
+            border: 2px solid green;
+            background-color: gray;
+        }
+
+        .one,.two,.three {
+            border: 2px solid black;
+            color: red;
+            width: 100%;
+            margin-left: 100px;
+        }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="one"><h2>ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</h1></div>
+            <div class="two"><h2>lorem ipsum</h2></div>
+            <div class="three"><h2>lorem ipsum</h2>lorem ipsum</div>
+        </div>
+    </body>
+
+</html> 

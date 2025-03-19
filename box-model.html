@@ -1,0 +1,67 @@
+<!doctype html>
+
+
+<!-- following tutorial
+ https://www.youtube.com/watch?v=rIO5326FgPE
+
+    
+ !!! NOTICE THIS FIRST !!!
+    by default,
+    box-sizing: content-box -> width height attribute will set content box 
+                                including padding and margin values 
+    box-sizing: border-box; -> by declaring this, width and height attributes includes
+                                padding and margin values , pushing content box further in
+
+
+ every html element is a box   
+ box consists of:
+    content -> actual element size
+    content box -> box wrapping the content
+    padding -> spacing around content and box
+    border  -> thickness of border
+    margin  -> a "moat" around the element, calculated from border
+ 
+
+    sometimes its recommended to put box-sizing: border-box; in universal selector
+-->
+ <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                font-size: 40px;
+                box-sizing: border-box;
+            }
+            
+            .box-one {
+                background-color: #EB5757;
+                width: 100px;
+                height: 00px;
+                padding: 10px;
+                border: 20px solid #9B51E0;
+                margin: 20px;
+
+                
+            }
+
+            .box-two {
+                background-color: #2D9CDB;
+                width: 100px;
+                height: 100px;
+                padding: 10px;
+                border: 20px solid #9B51E0;
+                margin: 20px;
+            }
+        </style>
+    </head>
+
+
+
+
+    <body>
+        <h1 class="box-one">One</h1>
+        <h1 class="box-two">Two</h1>
+    </body>
+</html>

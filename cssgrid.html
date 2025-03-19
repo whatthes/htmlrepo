@@ -1,0 +1,105 @@
+<!-- 
+https://www.theodinproject.com/lessons/foundations-introduction-to-flexbox#how-to-create-flex-item-knowledge-check
+
+
+CSS GRID
+
+1. Define your grid
+
+    grid-template-columns: 
+    grid-template-rows: ;
+    each value input forms a row or column
+
+    accepts absolute values like px,
+        or values like:
+            50% (percentage of full span), 
+            1fr 2fr (fraction of remaining space),
+            minmax()
+
+        repeat(5, 20%) for easier syntax
+
+    grid-template: grid-template-rows / grid-template-columns is shorthand
+
+    grid-template-areas:
+        'header header'
+        'main main'
+        'footer footer';    a 'visual' manner of creating grid
+                            in items use grid-area: <name> to assign item to corresponding cell
+
+    grid-gap: <size>
+
+    formatting items:
+
+        align all items in a cell:
+            justify-items: stretch(default), start, end, baseline, center
+            align-items:
+
+            to format individual items use align-self in the items
+
+        align the grid within the container:
+            justify-content:  start, end , center, space-around-between-evenly
+            align-content:
+
+    when there is no more space left on the grid, new added elements will still
+        be added to it.
+
+        grid-auto-flow: (accepts row or column), determine overflow elements will
+            take up row or column
+        
+        grid-auto-rows: <size> determine size of overflow element
+
+        grid-auto-column: <size>
+        
+
+2. Position item in cells
+    unspecified descendents/children elements auto fill the grid row first, then col
+
+    grid-row-start/end
+    grid-column-start/end
+    grid-row: start/end
+    grid-column: start/end
+        accepts numbers, also `span`
+    grid-area: row-start / col-start / row-end / column-end
+        is shorthand
+
+    z-index resolve overlapping items
+
+    formatting:
+        justify-self: center
+        align-self
+-->
+
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+
+        <title>My first web page</title>
+
+    
+        <style>
+            .container {
+                display: grid;
+                border: 5px solid brown;
+                grid-template-columns: 100px 100px 100px;
+                grid-template-rows: 100px 100px;
+            }
+            
+            .item {
+                box-sizing: border-box;
+                border: 5px solid blue;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="item item-one">1</div>
+            <div class="item item-two">2</div>
+            <div class="item item-three">3</div>
+        </div>
+    </body>
+
+</html> 

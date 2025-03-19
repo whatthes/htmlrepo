@@ -1,0 +1,26 @@
+/* everything is a box
+
+https://www.theodinproject.com/lessons/foundations-block-and-inline
+
+
+most elements by default is display: block
+
+block elements will appear on the page stacked atop each other, each new element starting on a new line.
+
+display: inline appear in line with whatever elements they are placed beside.
+
+example <a> anchor tag is inline
+
+display: inline-block behave like inline elements, but with block-style padding and margin.
+
+<--- divs and spans --->
+
+div is block-level by default. used to group elements
+ Empty divs by default have 0 height
+
+Span is an inline-level element by default.
+
+ used to group text content and inline HTML elements for styling and should only be used when no other semantic HTML element is appropriate.
+
+
+*/

@@ -6,7 +6,8 @@ ID selectors (most specific selector)
 Class selectors
 Type selectors
 
-When there is no declaration with a selector of higher specificity, a rule with a greater number of selectors of the same type will take precedence 
+When there is no declaration with a selector of higher specificity, 
+a rule with a greater number of selectors of the same type will take precedence 
 https://www.theodinproject.com/lessons/foundations-the-cascade#specificity
 
 * + ~ > doesnt add to specificity
@@ -34,4 +35,6 @@ in case of ultimate tie-breakers, last defined wins
 
 test specificity
 https://specificity.keegan.st/
+
+https://www.w3schools.com/css/css_combinators.asp
 */

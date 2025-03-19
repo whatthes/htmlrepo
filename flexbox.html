@@ -1,0 +1,98 @@
+<!-- 
+https://www.theodinproject.com/lessons/foundations-introduction-to-flexbox#how-to-create-flex-item-knowledge-check
+
+
+flex box
+
+A flex container is any element that has display: flex on it.
+A flex item is any element that lives directly inside of a flex container.
+ Some of flex properties belong on the flex container, while some go on the flex items.
+
+flexbox container default is flex-direction: row, for left-right languages
+    in this situation main axis spans horizontally, and cross axis spans vertically
+
+flex container properties:
+    flex-direction: row-reverse; if you want to reverse order
+
+    justify-content aligns items across the main axis, try values space-between and center, default flex-start
+
+    align-items change the placement of items along the cross axis, default value is stretch
+
+    gap: 8px; on a flex container adds a specified space between flex items, similar to adding a margin to the items themselves.
+
+    flex-wrap: wrap(default nowrap) allows overflow items into new line instead of all crushed in a row
+        align-content, aligns items on cross-axis when they are wrapped
+
+    flex-flow: column wrap; this is shorthand to set both flex-direction and flex-wrap
+
+flex item properties
+
+    margin-left:auto ,margin-right: auto moves flex item in a stated direction
+
+    flex: 1 equates to: flex-grow: 1, flex-shrink: 1, flex-basis: 0
+    or flex: 1 1 0
+
+    flex-grow tells the item to grow by the specified factor relative to surrounding elements
+
+    flex-shrink is similar to flex-grow, but sets the “shrink factor” of a flex item. 
+    flex-shrink only ends up being applied if the size of all flex items is larger than their parent container.
+    flex-shrink: 1, which means all items will shrink evenly
+    If you do not want an item to shrink then you can specify flex-shrink: 0;
+
+
+    The actual default value for flex-basis is auto,
+        but when you specify flex: 1 on an element, it interprets that as flex: 1 1 0.
+
+    align-self: aligns flex-items individually
+
+    order: arranges the specific item's order
+-->
+
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+
+        <title>My first web page</title>
+
+    
+        <style>
+            .flex-container {
+                height: 500px;
+                border: 4px solid indigo;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-basis: 100px;
+                flex-wrap: wrap;
+                    gap: 8px;
+            }
+
+            /* this selector selects all divs inside of .flex-container */
+            .flex-container div {
+                background: peachpuff;
+                border: 4px solid brown;
+                height: 100px;
+                width: 110px;
+                
+            }
+
+            .flex-container .three {
+                /* flex-shrink: 0; */
+                background: blue;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <div class="flex-container">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+    </body>
+
+</html> 
